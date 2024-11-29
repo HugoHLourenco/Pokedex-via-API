@@ -8,4 +8,128 @@ body {
     height: 100vh; 
 }
 
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 2px solid #900; 
+    border-radius: 5px;
+    margin-right: 10px; 
+    font-size: 16px; 
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background-color: #c27e10; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.search-bar button:hover {
+    background-color: #ba082a; 
+}
+
+.info-box {
+    background-color: #ffcccc; 
+    border: 3px solid #900; 
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+    padding: 15px;
+    margin-top: 20px; 
+    width: 80%; 
+    max-width: 600px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.info-box p {
+    margin: 5px 0; 
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+li {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.pokemon-card {
+    text-align: center;
+}
+
+.pokemon-img {
+    width: 200px;
+}
+
+.fire { background-color: #ee8f42; }
+.grass { background-color: #418f43; }
+.dragon { background-color: #1341a5; }
+.ice { background-color: #10dbff; }
+.fighting { background-color: #7c2535; }
+.ground { background-color: #a18051; }
+.bug { background-color: #d3f19c; }
+.normal { background-color: #acacac; }
+.poison { background-color: #7f2cce; }
+.electric { background-color: #fffc32; }
+.rock { background-color: #706461; }
+.steel { background-color: #6b7d8b; }
+.psychic { background-color: #ffc4c8; }
+.fairy { background-color: #fb09ff; }
+.dark { background-color: #000000; color: whitesmoke;}
+.water { background-color: #3178fc; }
+.flying { background-color: #aef8e9; }
+.ghost { background-color: #25174d; }
+
+.btn {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    outline: none; 
+}
+
+.search-btn {
+    background-color: #4CAF50; 
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.3); 
+}
+
+.clear-btn {
+    background-color: #f44336; 
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3); 
+}
+
+.btn:active {
+    transform: translateY(2px); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
 
