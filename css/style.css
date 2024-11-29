@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
 body {
-    margin: 0; 
-    padding: 0; 
+    font-family: 'Oxanium', cursive;
+    background-color: #f5f5f5;
+    /* Cor de fundo atual */
     background-image: url('/images/backgroud.png');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    height: 100vh; 
+    /* Adiciona a imagem de fundo */
+    background-size: cover;
+    /* Faz com que a imagem cubra toda a área */
+    background-position: center;
+    /* Centraliza a imagem */
+    background-attachment: fixed;
+    /* Mantém a imagem fixa ao rolar */
+    margin: 0;
 }
 
 .search-container {
@@ -13,52 +20,43 @@ body {
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+    margin: 10px;
 }
 
 .search-bar {
     display: flex;
     align-items: center;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .search-bar input {
     padding: 10px;
-    border: 2px solid #900; 
+    border: 2px solid #900;
     border-radius: 5px;
-    margin-right: 10px; 
-    font-size: 16px; 
-}
-
-.search-bar button {
-    padding: 10px 15px;
-    background-color: #c27e10; 
-    color: #fff; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    transition: background-color 0.3s; 
+    margin-right: 10px;
+    font-size: 16px;
 }
 
 .search-bar button:hover {
-    background-color: #ba082a; 
+    background-color: #ba082a;
 }
 
 .info-box {
-    background-color: #ffcccc; 
-    border: 3px solid #900; 
+    background-color: #ffcccc;
+    border: 3px solid #900;
     border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     padding: 15px;
-    margin-top: 20px; 
-    width: 80%; 
-    max-width: 600px; 
+    margin-top: 20px;
+    width: 80%;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
+    align-items: flex-start;
 }
 
 .info-box p {
-    margin: 5px 0; 
+    margin: 5px 0;
 }
 
 ul {
@@ -86,50 +84,39 @@ li {
     width: 200px;
 }
 
-.fire { background-color: #ee8f42; }
-.grass { background-color: #418f43; }
-.dragon { background-color: #1341a5; }
-.ice { background-color: #10dbff; }
-.fighting { background-color: #7c2535; }
-.ground { background-color: #a18051; }
-.bug { background-color: #d3f19c; }
-.normal { background-color: #acacac; }
-.poison { background-color: #7f2cce; }
-.electric { background-color: #fffc32; }
-.rock { background-color: #706461; }
-.steel { background-color: #6b7d8b; }
-.psychic { background-color: #ffc4c8; }
-.fairy { background-color: #fb09ff; }
-.dark { background-color: #000000; color: whitesmoke;}
-.water { background-color: #3178fc; }
-.flying { background-color: #aef8e9; }
-.ghost { background-color: #25174d; }
+.fire {background-color: #c27e10;}
+.grass {background-color: #4CAF50;}
+.dragon {background-color: #3263cc;}
+.ice {background-color: #42bed3;}
+.fighting {background-color: #ba082a;}
+.ground {background-color: #9e7e52;}
+.bug {background-color: #98e880;}
+.normal {background-color: #A9A9A9;}
+.poison {background-color: #9e5cda;}
+.electric {background-color: #ffd365;}
+.rock {background-color: #897975;}
+.steel {background-color: #999999;}
+.psychic {background-color: #e39fa4;}
+.fairy {background-color: #f040f3;}
+.dark {background-color: #12124f;}
+.water {background-color: #00BFFF;}
+.flying {background-color: #23f1c7;}
+.ghost {background-color: #5626de;}
 
 .btn {
-    padding: 10px 20px;
-    margin: 0 5px;
+    background: linear-gradient(to bottom, red, white);  
+    margin: 10px;
+    color: black;  
     border: none;
+    padding: 10px 20px;
     border-radius: 5px;
     font-size: 16px;
-    font-weight: bold;
-    color: white;
-    cursor: pointer;
+    cursor: pointer; 
     transition: transform 0.2s, box-shadow 0.2s;
-    outline: none; 
 }
 
-.search-btn {
-    background-color: #4CAF50; 
-    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.3); 
-}
-
-.clear-btn {
-    background-color: #f44336; 
-    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3); 
-}
 
 .btn:active {
-    transform: translateY(2px); 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-

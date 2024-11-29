@@ -6,7 +6,7 @@ createApp({
             pokemons: [],
             loading: true,
             searchText: '',
-            searchedPokemon: null, // Para armazenar o Pokémon buscado
+            searchedPokemon: null, 
             nextPage: 1,
         };
     },
@@ -93,10 +93,10 @@ createApp({
                 fairy: '#f040f3',
                 dragon: '#3263cc',
             };
-            return typeColorMap[type] || '#A9A9A9'; // Cor padrão se o tipo não for encontrado
+            return typeColorMap[type] || '#A9A9A9'; 
         },
         async searchPokemon() {
-            if (!this.searchText) return; // Não busca se a barra de pesquisa estiver vazia
+            if (!this.searchText) return; 
             try {
                 const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${this.searchText.toLowerCase()}`);
                 if (!response.ok) throw new Error('Pokémon não encontrado');
@@ -111,12 +111,12 @@ createApp({
             } catch (e) {
                 console.error(e);
                 alert('Pokémon não encontrado. Tente novamente.');
-                this.searchedPokemon = null; // Limpa a busca caso não encontre
+                this.searchedPokemon = null;
             }
         },
         clearSearch() {
             this.searchText = '';
-            this.searchedPokemon = null; // Limpa o Pokémon buscado
+            this.searchedPokemon = null; 
         }
     }
 }).mount("#app");
