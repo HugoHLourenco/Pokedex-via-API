@@ -8,7 +8,15 @@
     <title>PokedexAPI</title>
 </head>
 <body>
-    <audio id="background-music" src="/sounds/Soundtrack.mp3" loop autoplay></audio>
+    <audio id="SoundTrack" src="/sounds/Soundtrack.mp3" loop autoplay></audio>
     
 </body>
 </html>
+
+<!-- Método que abaixa o volume -->
+<script>
+    window.onload = () => {
+      var audio = document.getElementById("SoundTrack")
+      audio.volume = 0.1
+    }
+</script>
