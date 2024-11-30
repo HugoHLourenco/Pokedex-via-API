@@ -1,4 +1,4 @@
-# Pokedex-via-API
+# 📕Pokedex-via-API
  ## Uma Pokedex que funciona consumindo a PokeAPI.
  
 <p>
