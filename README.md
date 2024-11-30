@@ -5,7 +5,7 @@
  <img width="" height="" src="/images/gif.gif">
 </p>
 
-## 🖥️Tecnologia utilizada:
+## 🖥️Tecnologias utilizadas:
 - [VUE.js](https://vuejs.org)
 - [PokeAPI](https://pokeapi.co)
 
