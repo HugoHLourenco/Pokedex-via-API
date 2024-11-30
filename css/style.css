@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 11px;
     margin: 10px;
 }
 
@@ -31,10 +31,6 @@ body {
     border-radius: 5px;
     margin-right: 10px;
     font-size: 16px;
-}
-
-.info-box p {
-    margin: 5px 0;
 }
 
 ul {
@@ -88,6 +84,7 @@ li {
     background: linear-gradient(to bottom, red, white);  
     margin: 10px;
     color: black;  
+    font-weight: 700;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -96,8 +93,19 @@ li {
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
+.btn:hover {
+    background: linear-gradient(to bottom, white, red);  
+}
 
 .btn:active {
-    transform: translateY(2px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(3px);
+    box-shadow: 5px 2px 4px rgba(2, 0, 0, 0.2);
+}
+
+.titulo {
+    margin-top: 10%;
+    background: linear-gradient(to bottom, red, white);
+    border-radius: 6%;
+    width: 50%;
+    text-align: center;
 }

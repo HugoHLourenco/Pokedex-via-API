@@ -110,7 +110,7 @@ createApp({
                 };
             } catch (e) {
                 console.error(e);
-                alert('Pokémon não encontrado. Tente novamente.');
+                alert('MISSING NO.');
                 this.searchedPokemon = null;
             }
         },

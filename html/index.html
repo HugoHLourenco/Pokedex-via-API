@@ -13,6 +13,11 @@
     
     <div id="app">
         <div class="search-container">
+            <div class="titulo">
+                <h1>POKEDEX</h1>
+                <h2>Vá para baixo para descobrir novos pokemons :)</h2>
+            </div>
+
             <div class="search-bar">
                 <input type="text" placeholder="Digite o nome do Pokémon" v-model="searchText" @keyup.enter="searchPokemon">
                 <button class="btn" @click="searchPokemon">Buscar</button> 
@@ -40,12 +45,12 @@
             <ul>
                 <li v-for="pokemon in filteredPokemons" :key="pokemon.id" :style="getPokemonStyle(pokemon)">
                     <div class="pokemon-card">
-                        <p>{{  pokemon.id }} - {{ pokemon.name }}</p>
+                        <p>{{  pokemon.id }} - {{ (pokemon.name).toUpperCase() }}</p>
                         <div class="pokemon-img">
                             <img :src="pokemon.sprites.other.showdown.front_default">
                         </div>
-                        <p>{{ pokemon.types[0].type.name }}</p>
-                        <p v-if="pokemon.types.length > 1">{{ pokemon.types[1].type.name }}</p>
+                        <p>{{ (pokemon.types[0].type.name).toUpperCase() }}</p>
+                        <p v-if="pokemon.types.length > 1">{{ (pokemon.types[1].type.name).toUpperCase() }}</p>
                     </div>
                 </li>
             </ul>
@@ -64,6 +69,6 @@
 <script>
     window.onload = () => {
       var audio = document.getElementById("SoundTrack")
-      audio.volume = 0.3
+      audio.volume = 0.1
     }
 </script>
