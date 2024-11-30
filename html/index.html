@@ -8,10 +8,13 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <title>Pokedex API</title>
 </head>
+
 <body>
-    <audio id="SoundTrack" src="/sounds/Soundtrack.mp3" loop autoplay></audio>  
-    
     <div id="app">
+        <audio autoplay id="SoundTrack" src="/sounds/Soundtrack.mp3" loop ref="audio"></audio>  
+    
+        <button @click="toggleMute()" class="btn-mute">{{ isMuted ? 'Desmutar' : 'Mutar' }}</button>
+
         <div class="search-container">
             <div class="titulo">
                 <h1>POKEDEX</h1>
@@ -23,7 +26,6 @@
                 <button class="btn" @click="searchPokemon">Buscar</button> 
                 <button class="btn" @click="clearSearch">Limpar</button>
             </div>
-
         </div>
     
         <div v-if="searchedPokemon">
@@ -36,6 +38,7 @@
                         </div>
                         <p>{{ searchedPokemon.types[0].type.name }}</p>
                         <p v-if="searchedPokemon.types.length > 1">{{ searchedPokemon.types[1].type.name }}</p>
+                        <p>Weight: {{(pokemon.weight * 0.45359237).toFixed(0)}} Kg</p>
                     </div>
                 </li>
             </ul>
@@ -64,11 +67,3 @@
     <script src="/js/index.js"></script>
 </body>
 </html>
-
-<!-- Método que abaixa o volume -->
-<script>
-    window.onload = () => {
-      var audio = document.getElementById("SoundTrack")
-      audio.volume = 0.1
-    }
-</script>

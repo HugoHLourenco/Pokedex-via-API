@@ -109,3 +109,15 @@ li {
     width: 50%;
     text-align: center;
 }
+
+.btn-mute {
+    background: linear-gradient(to bottom, red, white); 
+    height: 5%;
+    width: 8%;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    border-radius: 6%;
+    cursor: pointer; 
+    transition: transform 0.2s, box-shadow 0.2s;
+}

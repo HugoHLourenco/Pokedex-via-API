@@ -8,8 +8,10 @@ createApp({
             searchText: '',
             searchedPokemon: null, 
             nextPage: 1,
+            isMuted: false,
         };
     },
+
     computed: {
         filteredPokemons() {
             return this.pokemons.filter(pokemon =>
@@ -17,14 +19,30 @@ createApp({
             );
         }
     },
+
+    mounted() {
+        window.onload = () => {
+            var audio = document.getElementById("SoundTrack")
+            audio.volume = 0.1
+            audio.play()
+        }
+    },
+
     created() {
         this.callAPI();
         window.addEventListener('scroll', this.handleScroll);
     },
+
     beforeUnmount() {
         window.removeEventListener('scroll', this.handleScroll);
     },
+
     methods: {
+        toggleMute() {
+            this.isMuted = !this.isMuted
+            this.$refs.audio.muted = this.isMuted
+        },
+
         async callAPI() {
             try {
                 const response = await fetch(`https://pokeapi.co/api/v2/pokemon/?offset=${(this.nextPage - 1) * 151}&limit=151`);
