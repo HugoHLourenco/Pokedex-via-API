@@ -19,6 +19,7 @@ body {
 }
 
 .search-bar {
+    margin-top: 10%;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -30,20 +31,6 @@ body {
     border-radius: 5px;
     margin-right: 10px;
     font-size: 16px;
-}
-
-.info-box {
-    background-color: #ffcccc;
-    border: 3px solid #900;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    padding: 15px;
-    margin-top: 20px;
-    width: 80%;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 .info-box p {
@@ -92,7 +79,7 @@ li {
 .steel {background-color: #8190ac;}
 .psychic {background-color: #ffb3b8;}
 .fairy {background-color: #fb07ff;}
-.dark {background-color: #000000; color: whitesmoke}
+.dark {background-color: #000000;}
 .water {background-color: #3272fd;}
 .flying {background-color: #9ff1ff;}
 .ghost {background-color: #240b66;}
