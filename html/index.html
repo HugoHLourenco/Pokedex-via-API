@@ -19,17 +19,13 @@
                 <button class="btn" @click="clearSearch">Limpar</button>
             </div>
 
-            <!-- <div class="info-box">
-                <p>A busca por aproximação do nome identifica qualquer trecho do nome do Pokémon desde que ele já tenha sido carregado na página.</p>
-                <p>Para buscar um Pokémon que ainda não foi carregado, é necessário digitar o nome completo.</p>
-            </div> -->
         </div>
     
         <div v-if="searchedPokemon">
             <ul>
                 <li :style="getPokemonStyle(searchedPokemon)">
                     <div class="pokemon-card">
-                        <p>{{ searchedPokemon.name }}</p>
+                        <p>{{  pokemon.id }} - {{ searchedPokemon.name }}</p>
                         <div class="pokemon-img">
                             <img :src="searchedPokemon.sprites.other.showdown.front_default">
                         </div>
@@ -44,7 +40,7 @@
             <ul>
                 <li v-for="pokemon in filteredPokemons" :key="pokemon.id" :style="getPokemonStyle(pokemon)">
                     <div class="pokemon-card">
-                        <p>{{ pokemon.name }}</p>
+                        <p>{{  pokemon.id }} - {{ pokemon.name }}</p>
                         <div class="pokemon-img">
                             <img :src="pokemon.sprites.other.showdown.front_default">
                         </div>
