@@ -13,7 +13,7 @@
     <div id="app">
         <audio autoplay id="SoundTrack" src="/sounds/Soundtrack.mp3" loop ref="audio"></audio>  
     
-        <button @click="toggleMute()" class="btn-mute">{{ isMuted ? 'Desmutar' : 'Mutar' }}</button>
+        <button @click="toggleMute()" class="btn-mute">{{ isMuted ? 'Desmutar🔊' : 'Mutar🔇' }}</button>
 
         <div class="search-container">
             <div class="titulo">
@@ -23,8 +23,8 @@
 
             <div class="search-bar">
                 <input type="text" placeholder="Digite o nome do Pokémon" v-model="searchText" @keyup.enter="searchPokemon">
-                <button class="btn" @click="searchPokemon">Buscar</button> 
-                <button class="btn" @click="clearSearch">Limpar</button>
+                <button class="btn" @click="searchPokemon">Buscar🔍</button> 
+                <button class="btn" @click="clearSearch">Limpar🧹</button>
             </div>
         </div>
     
